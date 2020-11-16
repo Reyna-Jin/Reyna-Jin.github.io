@@ -1,4 +1,26 @@
-#web_bg {
+/* 彩带 */
+/* .card-info-avatar:hover {
+  background: url(https://cdn.jsdelivr.net/gh/rigodlee/BLOGCDN/img/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
+} */
+
+/* 花 */
+.card-info-avatar:hover {
+  background: url(https://cdn.jsdelivr.net/gh/rigodlee/BLOGCDN/img/20200530181856.gif);
+}
+
+#loading-box {
+  /* webkit内核 5.1 - 6.0 */
+  background: -webkit-linear-gradient(left, red, blue);
+  /* Opera 11.1 - 12.0 */
+  background: -o-linear-gradient(right, red, blue);
+  /* Firefox 3.6 - 15 */
+  background: -moz-linear-gradient(right, red, blue);
+  /* 标准的语法 */
+  background: linear-gradient(to right, red, blue);
+}
+
+/* #web_bg {
+
     background: -webkit-linear-gradient(
       0deg,
       rgba(247, 149, 51, 0.1) 0,
@@ -54,20 +76,20 @@
       rgba(7, 179, 155, 0.1) 86%,
       rgba(109, 186, 130, 0.1) 100%
     );
-  }
+  } */
 
-/* ����ҳ���� */
+/* 文章页背景 */
 .layout_post>#post {
-    /* ���´�����ɫ͸����Ϊ0.3 */
+    /* 以下代表白色透明度为0.3 */
     background: rgba(255,255,255,.3);
 }
-/* ���б�����������ҳ��Ƭ������ҳ��ҳ��ҳ�ȣ� */
+/* 所有背景（包括首页卡片、文章页、页面页等） */
 #aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
-    /* ���´�����ɫ͸����Ϊ0.3 */
+    /* 以下代表白色透明度为0.3 */
     background: rgba(255,255,255,.3);
 }
 
-/* �����ʽ */
+/* 鼠标样式 */
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
         default;
@@ -78,7 +100,42 @@ img {
         default;
 }
 
-/* ҳ�Ű�͸�� */
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+ 
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+ 
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+/* 页脚半透明 */
 #footer {
     background: rgba(255,255,255,.15);
     color: #000;
@@ -99,8 +156,8 @@ img {
     color: var(--font-color);
 }
 
-/* ������ */
-/* ������ */
+/* 滚动条 */
+/* 滚动条 */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -134,3 +191,11 @@ img {
     color: #fff;
     background-color: #49b1f5;
   }
+
+  /* 鱼塘固定宽度 */
+canvas:not(#ribbon-canvas), #web_bg {
+  margin-bottom: -0.5rem;
+  display: block;
+  width: 100%;
+  height: 160px
+}
