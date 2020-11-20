@@ -8,19 +8,7 @@
   background: url(https://cdn.jsdelivr.net/gh/rigodlee/BLOGCDN/img/20200530181856.gif);
 }
 
-#loading-box {
-  /* webkit内核 5.1 - 6.0 */
-  background: -webkit-linear-gradient(left, red, blue);
-  /* Opera 11.1 - 12.0 */
-  background: -o-linear-gradient(right, red, blue);
-  /* Firefox 3.6 - 15 */
-  background: -moz-linear-gradient(right, red, blue);
-  /* 标准的语法 */
-  background: linear-gradient(to right, red, blue);
-}
-
-/* #web_bg {
-
+#body-wrap {
     background: -webkit-linear-gradient(
       0deg,
       rgba(247, 149, 51, 0.1) 0,
@@ -76,7 +64,17 @@
       rgba(7, 179, 155, 0.1) 86%,
       rgba(109, 186, 130, 0.1) 100%
     );
-  } */
+  }
+
+
+#page-header {
+  background-image: url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg");
+}
+
+/* index_img透明度 */
+/* #page-header.full_page {
+  background: rgba(255,255,255,.3);
+} */
 
 /* 文章页背景 */
 .layout_post>#post {
@@ -137,6 +135,7 @@ img {
 
 /* 页脚半透明 */
 #footer {
+    
     background: rgba(255,255,255,.15);
     color: #000;
     border-top-right-radius: 20px;
