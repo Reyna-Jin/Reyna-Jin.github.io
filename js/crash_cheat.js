@@ -20,6 +20,6 @@ document.addEventListener('visibilitychange', function () {
 		
 		titleTime = setTimeout(function () {
             document.title = OriginTitle;
-        }, 6000);
+        }, 500);
     }
 });
