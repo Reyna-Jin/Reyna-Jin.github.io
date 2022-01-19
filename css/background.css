@@ -68,11 +68,11 @@
 
 
 #page-header {
-  /* background-image: url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), 
-                    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), 
-                    url(../img/5.jpg); */
-  background-image: url(../img/14.jpg);
-
+  background-image: url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), 
+                    linear-gradient(60deg, rgba(255, 165, 150, 0.45) 5%, rgba(0, 228, 255, 0.35)), 
+                    url(../img/14.jpg);
+                    /* rgba的第四个参数越接近1，该颜色越透明 */
+  /* background-image: url(../img/14.jpg); */
 }
 
 /* index_img透明度 */
